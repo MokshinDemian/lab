@@ -34,3 +34,17 @@ int main()
 	printf("С 8:00 прошло %d секунд\n", 60*60 * N + 60* K - 8 * 60*60);
 	printf("Текущий час = %.2f суток и текущая минута = %.2f часа\n", N / 24., K / 60.);
 }
+
+
+#include <stdio.h>
+#include <locale.h>
+int main()
+{
+	setlocale(LC_CTYPE, ".UTF8");
+	int n=2;
+	int l=333;
+	float k=n / l;
+	int m= n % l;
+	printf("Дано: \n\t\t %d\n\t\t\%d\n\t -----------\n Ответ: \n\t+ %2.2d.%4.4d", n,l,k,m);
+
+
