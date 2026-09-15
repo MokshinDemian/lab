@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale.h>
+int main()
+
+{
+
+	printf("123\n"); // подзадание 1
+	printf("%d\n\t %d\n\t\t %d\n\t\t\t %d\n",1 , 2, 3,4);
+	printf("%10.5f\n ", 12.234657);
+	setlocale(LC_CTYPE, ".UTF8");
+	printf("Остаток от деления %d на %d равен %d\n", 5, 2, 5 % 2);
+	printf("Остаток от деления %d на %d равен %d\n", 7, 5, 7 % 5);
+	printf("Умножения %d на %d равно %d\n", 2000, 4, 2000 * 4);
+	printf("%g разделить %e равно %f\n ", 5., 2000000., 5. / 2000000);
+
